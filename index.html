@@ -1,0 +1,434 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/input.css" rel="stylesheet">
+  <link href="assets/css/output.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
+</head>
+<body class="scroll-smooth">
+    <header class="container mx-auto py-6 z-40 md:px-0 px-4   w-full sticky top-0 bg-white ">
+        <div class="flex justify-between items-center">
+          <a href="/" class="h-6">
+            <img src="assets/images/logo.png" alt="Logo" class="w-full h-full invert">
+          </a>
+          <nav class="hidden md:block">
+            <ul class="flex justify-center items-center gap-4">
+              <li>
+                <a href="#anasayfa" class="nav-link text-black text-base font-medium relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300">
+                  Anasayfa
+                </a>
+              </li>
+              <li>
+                <a href="#etkinliklerimiz" class="nav-link text-black text-base font-medium relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300">
+                  Etkinliklerimiz
+                </a>
+              </li>
+              <li>
+                <a href="#medias" class="nav-link text-black text-base font-medium relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300">
+                  Medya
+                </a>
+              </li>
+              <li>
+                <a href="#iletisim" class="nav-link text-black text-base font-medium relative pb-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300">
+                  İletişim
+                </a>
+              </li>
+            </ul>
+
+          </nav>
+          <div class="flex items-center gap-4">
+            <a href="" class="bg-black rounded-xl px-6 py-2 btn-switch-text">
+              <span>
+                  <span class="btn-double-text text-white" data-text="Teklif Al">Teklif Al</span>
+              </span>
+            </a>
+            <a href="" class="h-4">
+              <img src="assets/images/lcv-icon.png" alt="Lcv Icon" class="w-full h-full object-contain invert">
+            </a>
+          </div>
+        </div>
+    </header>
+
+    <section id="anasayfa" class="md:h-[750px] h-[500px] w-full container mx-auto md:rounded-lg overflow-hidden">
+      <div class="swiper slider-swiper ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide bg-cover bg-center md:px-20 px-5 " style="background-image: url('assets/images/slider1.png');">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black "></div>
+            <div class="container mx-auto flex flex-col justify-center md:items-start items-center w-full h-full z-10 relative">
+              <h4 class="text-white md:text-2xl text-xl opacity-0 translate-y-10 transition-all duration-1000">
+                EN MUTLU GÜNÜNÜZDE
+              </h4>
+              <h1 class="text-white md:text-5xl text-4xl font-medium mt-4 opacity-0 translate-y-10 transition-all duration-1000 delay-300">
+                KENDİ MASALINIZI DÜŞLEYİN
+              </h1>
+            </div>
+          </div>
+          <div class="swiper-slide bg-cover bg-center px-20 " style="background-image: url('assets/images/slider1.png');">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black "></div>
+            <div class="container mx-auto flex flex-col justify-center md:items-start items-center w-full h-full z-10 relative">
+              <h4 class="text-white md:text-2xl text-xl opacity-0 translate-y-10 transition-all duration-1000">
+                EN MUTLU GÜNÜNÜZDE
+              </h4>
+              <h1 class="text-white md:text-5xl text-4xl font-medium mt-4 opacity-0 translate-y-10 transition-all duration-1000 delay-300">
+                KENDİ MASALINIZI DÜŞLEYİN
+              </h1>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="etkinliklerimiz" class="container mx-auto py-28 relative">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="md:basis-1/3">
+          <div class="flex flex-col justify-start md:items-start items-center gap-2">
+            <div class="h-6">
+              <img src="assets/images/logo.png" alt="Etkinliklerimiz Icon" class="w-full h-full object-contain invert">
+            </div>
+            <h2 class="text-4xl font-bold">
+              ETKİNLİKLERİMİZ
+            </h2>
+          </div>
+        </div>
+        <div class="md:block hidden">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        
+        <div class="swiper events-swiper  md:basis-2/3">
+          <div class="swiper-wrapper md:py-0 py-10">
+            <div class="swiper-slide relative rounded-lg overflow-hidden">
+              <div class="w-full h-[300px]">
+                <img src="assets/images/etkinliklerimiz1.png" alt="Etkinlik 1" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black">
+                <h3 class="text-white text-2xl font-bold w-full h-full flex justify-start items-end p-4">
+                  ETKİNLİK 1
+                </h3>
+              </div>
+              <div class="absolute top-2 left-4 bg-white rounded-lg">
+                <h3 class=" text-black text-base font-bold w-full h-full flex justify-start items-start px-4 py-2">
+                  ETKİNLİK 1
+                </h3>
+              </div>
+            </div>
+            
+            <div class="swiper-slide relative rounded-lg overflow-hidden">
+              <div class="w-full h-[300px]">
+                <img src="assets/images/etkinliklerimiz1.png" alt="Etkinlik 1" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black">
+                <h3 class="text-white text-2xl font-bold w-full h-full flex justify-start items-end p-4">
+                  ETKİNLİK 1
+                </h3>
+              </div>
+              <div class="absolute top-2 left-4 bg-white rounded-lg">
+                <h3 class=" text-black text-base font-bold w-full h-full flex justify-start items-start px-4 py-2">
+                  ETKİNLİK 1
+                </h3>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide relative rounded-lg overflow-hidden">
+              <div class="w-full h-[300px]">
+                <img src="assets/images/etkinliklerimiz1.png" alt="Etkinlik 1" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black">
+                <h3 class="text-white text-2xl font-bold w-full h-full flex justify-start items-end p-4">
+                  ETKİNLİK 1
+                </h3>
+              </div>
+              <div class="absolute top-2 left-4 bg-white rounded-lg">
+                <h3 class=" text-black text-base font-bold w-full h-full flex justify-start items-start px-4 py-2">
+                  ETKİNLİK 1
+                </h3>
+              </div>
+            </div>
+
+            <div class="swiper-slide relative rounded-lg overflow-hidden">
+              <div class="w-full h-[300px]">
+                <img src="assets/images/etkinliklerimiz1.png" alt="Etkinlik 1" class="w-full h-full object-cover">
+              </div>
+              <div class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black">
+                <h3 class="text-white text-2xl font-bold w-full h-full flex justify-start items-end p-4">
+                  ETKİNLİK 1
+                </h3>
+              </div>
+              <div class="absolute top-2 left-4 bg-white rounded-lg">
+                <h3 class=" text-black text-base font-bold w-full h-full flex justify-start items-start px-4 py-2">
+                  ETKİNLİK 1
+                </h3>
+              </div>
+            </div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="medias" class="container mx-auto py-28 relative bg-cover bg-center md:rounded-lg overflow-hidden md:h-[700px] h-[500px]" style="background-image: url('assets/images/medias.jpeg');">
+      <div class="absolute top-0 left-0 w-full h-full  bg-bymehmet opacity-75"></div>
+      <div class="flex flex-col justify-center items-center gap-4 z-10 relative h-full">
+        <a href="" class="w-full h-full flex flex-col justify-center items-center gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" color="#ffff" fill="none">
+            <path d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+          </svg>
+          <h2 class="text-4xl tracking-widest font-medium text-white text-center">
+            Oynatmak için tıklayın
+          </h2>
+          <h4 class="text-white font-light text-xl tracking-widest">
+            Tüm videolara buradan ulaşabilirsiniz.
+          </h4>
+
+        </a>
+      </div>
+      <div class="w-full h-full absolute bottom-10 -right-10  flex justify-end items-end">
+        <img src="assets/images/medias-icon.png" alt="Play Button" class="md:h-20 h-16 -rotate-90">
+      </div>
+    </section>
+
+    <section id="sponsorlarimiz" class="relative py-10 lg:py-8  bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <div class="container mx-auto">
+        <!-- Logo Slider -->
+        <div class="swiper logo-slider">
+          <div class="swiper-wrapper">
+            <!-- Logo Item -->
+            <div class="swiper-slide">
+              <a href="#" class="block w-full h-16 hover:opacity-75 transition-opacity">
+                <img src="assets/images/logo-netflix-oxford-blue.svg" 
+                     class="h-full w-32 mx-auto object-contain" 
+                     alt="Netflix Logo">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="block w-full h-16 hover:opacity-75 transition-opacity">
+                <img src="assets/images/logo-netflix-oxford-blue.svg" 
+                     class="h-full w-32 mx-auto object-contain" 
+                     alt="Netflix Logo">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="block w-full h-16 hover:opacity-75 transition-opacity">
+                <img src="assets/images/logo-netflix-oxford-blue.svg" 
+                     class="h-full w-32 mx-auto object-contain" 
+                     alt="Netflix Logo">
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="block w-full h-16 hover:opacity-75 transition-opacity">
+                <img src="assets/images/logo-netflix-oxford-blue.svg" 
+                     class="h-full w-32 mx-auto object-contain" 
+                     alt="Netflix Logo">
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="block w-full h-16 hover:opacity-75 transition-opacity">
+                <img src="assets/images/logo-netflix-oxford-blue.svg" 
+                     class="h-full w-32 mx-auto object-contain" 
+                     alt="Netflix Logo">
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="block w-full h-16 hover:opacity-75 transition-opacity">
+                <img src="assets/images/logo-netflix-oxford-blue.svg" 
+                     class="h-full w-32 mx-auto object-contain" 
+                     alt="Netflix Logo">
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="block w-full h-16 hover:opacity-75 transition-opacity">
+                <img src="assets/images/logo-netflix-oxford-blue.svg" 
+                     class="h-full w-32 mx-auto object-contain" 
+                     alt="Netflix Logo">
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section  class="relative py-10 lg:py-8 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <div id="particles-style-02" class="absolute top-0 left-0 w-full h-full" data-particle="true" data-particle-options="{&quot;particles&quot;: {&quot;number&quot;: {&quot;value&quot;: 18,&quot;density&quot;: {&quot;enable&quot;: true,&quot;value_area&quot;: 2000}},&quot;color&quot;: {&quot;value&quot;: [&quot;#8f76f5&quot;, &quot;#a65cef&quot;, &quot;#c74ad2&quot;, &quot;#e754a4&quot;, &quot;#ff6472&quot;]},&quot;shape&quot;: {&quot;type&quot;: &quot;circle&quot;,&quot;stroke&quot;:{&quot;width&quot;:0,&quot;color&quot;:&quot;#000000&quot;}},&quot;opacity&quot;: {&quot;value&quot;: 0.3,&quot;random&quot;: false,&quot;anim&quot;: {&quot;enable&quot;: false,&quot;speed&quot;: 1,&quot;sync&quot;: false}},&quot;size&quot;: {&quot;value&quot;: 8,&quot;random&quot;: true,&quot;anim&quot;: {&quot;enable&quot;: false,&quot;sync&quot;: true}},&quot;line_linked&quot;:{&quot;enable&quot;:false,&quot;distance&quot;:0,&quot;color&quot;:&quot;#ffffff&quot;,&quot;opacity&quot;:0.4,&quot;width&quot;:1},&quot;move&quot;: {&quot;enable&quot;: true,&quot;speed&quot;:1,&quot;direction&quot;: &quot;right&quot;,&quot;random&quot;: false,&quot;straight&quot;: false}},&quot;interactivity&quot;: {&quot;detect_on&quot;: &quot;canvas&quot;,&quot;events&quot;: {&quot;onhover&quot;: {&quot;enable&quot;: false,&quot;mode&quot;: &quot;repulse&quot;},&quot;onclick&quot;: {&quot;enable&quot;: false,&quot;mode&quot;: &quot;push&quot;},&quot;resize&quot;: true}},&quot;retina_detect&quot;: false}"><canvas class="particles-js-canvas-el w-full h-full" width="1164" height="620"></canvas></div>
+      <div class="container mx-auto">
+        <div class="flex items-center px-12 lg:px-0 relative z-10 justify-center md:justify-center">
+          <div class="lg:w-1/2 md:mb-12 md:block hidden">
+            <div class="flex gap-4">
+              <div class="w-1/2 sm:mb-0 mb-8">
+                <img src="assets/images/demo-application-home-06.jpg" 
+                     class="w-full rounded-lg shadow-2xl scroll-image-1" 
+                     alt="">
+              </div>
+              <div class="w-1/2">
+                <img src="assets/images/demo-application-home-07.jpg" 
+                     class="w-full rounded-lg shadow-2xl scroll-image-2" 
+                     alt="">
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-5/12 lg:ml-8 md:w-2/3 text-center lg:text-left">
+            <h3 class="text-gray-900 font-extrabold text-3xl tracking-tighter">Uygulamamızı İndirin</h3>
+            <span class="text-lg md:w-4/5 xl:w-full block mb-9 text-center">Uygulamamızı indirerek etkinliklerimizi takip edebilirsiniz.</span>
+            <div class="flex gap-4 pr-5 xl:pr-0 justify-center lg:justify-start">
+              <a href="#" class="w-1/2 lg:w-1/2 sm:w-5/12 hover:scale-105 transition-all duration-300">
+                <img src="assets/images/app-store-white.svg" class="rounded-md shadow-lg" alt="" data-no-retina="">
+              </a>
+              <a href="#" class="w-1/2 lg:w-1/2 sm:w-5/12 hover:scale-105 transition-all duration-300">
+                <img src="assets/images/play-store-white.svg" class="rounded-md shadow-lg" alt="" data-no-retina="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+  <footer id="iletisim" class="bg-footerBg pt-28 relative" style="background-image: url('assets/images/footer-bg.png');">
+    <div class="container mx-auto py-6 md:px-0 px-5">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-10">
+        <div class="flex flex-col justify-start items-start gap-2 md:basis-1/2">
+          <h2 class="text-white text-4xl font-bold mb-4">
+            İletişim Bilgilerimiz
+          </h2>
+
+          <div class="flex flex-col gap-4 ">
+
+            <div class="flex justify-start items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffff" fill="none">
+                <path d="M5 9C5 5.70017 5 4.05025 6.02513 3.02513C7.05025 2 8.70017 2 12 2C15.2998 2 16.9497 2 17.9749 3.02513C19 4.05025 19 5.70017 19 9V15C19 18.2998 19 19.9497 17.9749 20.9749C16.9497 22 15.2998 22 12 22C8.70017 22 7.05025 22 6.02513 20.9749C5 19.9497 5 18.2998 5 15V9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M11 19H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9 2L9.089 2.53402C9.28188 3.69129 9.37832 4.26993 9.77519 4.62204C10.1892 4.98934 10.7761 5 12 5C13.2239 5 13.8108 4.98934 14.2248 4.62204C14.6217 4.26993 14.7181 3.69129 14.911 2.53402L15 2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+              <h3 class="text-white text-xl font-light">0 850 220 85 66</h3>
+            </div>
+
+            <div class="flex justify-start items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                <path d="M2 5L8.91302 8.92462C11.4387 10.3585 12.5613 10.3585 15.087 8.92462L22 5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                <path d="M10.5 19.5C10.0337 19.4939 9.56682 19.485 9.09883 19.4732C5.95033 19.3941 4.37608 19.3545 3.24496 18.2184C2.11383 17.0823 2.08114 15.5487 2.01577 12.4814C1.99475 11.4951 1.99474 10.5147 2.01576 9.52843C2.08114 6.46113 2.11382 4.92748 3.24495 3.79139C4.37608 2.6553 5.95033 2.61573 9.09882 2.53658C11.0393 2.4878 12.9607 2.48781 14.9012 2.53659C18.0497 2.61574 19.6239 2.65532 20.755 3.79141C21.8862 4.92749 21.9189 6.46114 21.9842 9.52844C21.9939 9.98251 21.9991 10.1965 21.9999 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19 17C19 17.8284 18.3284 18.5 17.5 18.5C16.6716 18.5 16 17.8284 16 17C16 16.1716 16.6716 15.5 17.5 15.5C18.3284 15.5 19 16.1716 19 17ZM19 17V17.5C19 18.3284 19.6716 19 20.5 19C21.3284 19 22 18.3284 22 17.5V17C22 14.5147 19.9853 12.5 17.5 12.5C15.0147 12.5 13 14.5147 13 17C13 19.4853 15.0147 21.5 17.5 21.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <h3 class="text-white text-xl font-light">info@bymehmet.com.tr</h3>
+            </div>
+
+            <div class="flex justify-start items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                <path d="M18 18C19.2447 18.4244 20 18.9819 20 19.5925C20 20.9221 16.4183 22 12 22C7.58172 22 4 20.9221 4 19.5925C4 18.9819 4.75527 18.4244 6 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <path d="M15 9.5C15 11.1569 13.6569 12.5 12 12.5C10.3431 12.5 9 11.1569 9 9.5C9 7.84315 10.3431 6.5 12 6.5C13.6569 6.5 15 7.84315 15 9.5Z" stroke="currentColor" stroke-width="1.5" />
+                <path d="M12 2C16.0588 2 19.5 5.42803 19.5 9.5869C19.5 13.812 16.0028 16.777 12.7725 18.7932C12.5371 18.9287 12.2709 19 12 19C11.7291 19 11.4629 18.9287 11.2275 18.7932C8.00325 16.7573 4.5 13.8266 4.5 9.5869C4.5 5.42803 7.9412 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <h3 class="text-white text-xl font-light basis-3/4">Fatih Mah. Nüket Celal Ersoy Bulvarı No:22/A 27060 Şehitkamil / GAZİANTEP</h3>
+            </div>
+            
+            <!--Social Media-->
+            <div class="flex justify-start items-center gap-2">
+              <a href="" class="group w-10 h-10 rounded-full bg-bymehmet shadow-md hover:bg-white hover:text-bymehmet transition-all duration-300 flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none" class="group-hover:text-black">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+              </a>
+              <a href="" class="group w-10 h-10 rounded-full bg-bymehmet shadow-md hover:bg-white hover:text-bymehmet transition-all duration-300 flex justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none" class="group-hover:text-black">
+                  <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                  <path d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M17.5078 6.5L17.4988 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="flex flex-col justify-start items-start gap-2 md:basis-1/2 w-full">
+          <div class="bg-white p-10 rounded-lg shadow md:w-3/4 md:mx-auto w-full">
+            <h2 class="text-black text-4xl font-bold mb-4">
+              BİZE ULAŞIN
+            </h2>
+            <form action="">
+              <div class="mb-5">
+                <label for="name" class="block mb-2 font-bold text-gray-600">Adınız ve Soyadınız</label>
+                <input type="text" id="name" name="name" placeholder="Adınız ve Soyadınızı Giriniz" class="border border-gray-300 shadow p-3 w-full rounded mb-">
+              </div>
+     
+              <div class="mb-5">
+                <label for="twitter" class="block mb-2 font-bold text-gray-600">Telefon Numaranız</label>
+                <input type="text" id="twitter" name="twitter" placeholder="Telefon Numaranızı Giriniz" class="border  shadow p-3 w-full rounded mb-">
+              </div>
+
+              <div class="mb-5">
+                <label for="twitter" class="block mb-2 font-bold text-gray-600">Mesajınız</label>
+                <input type="text" id="twitter" name="twitter" placeholder="Mesajınızı Giriniz" class="border  shadow p-3 w-full rounded mb-">
+              </div>
+     
+              <button class="bg-black rounded-xl px-6 py-2 w-full btn-switch-text">
+                <span>
+                    <span class="btn-double-text text-white" data-text="Gönder">Gönder</span>
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+    
+      <div class="pt-20 flex justify-between items-center gap-2">
+        <h3 class="text-white text-base font-light">
+          Copyright © 2024 BYMEHMET. Tüm Hakları Saklıdır.
+        </h3>
+        <div>
+          <img src="assets/images/miova.png" alt="Logo" class="h-8">
+        </div>
+      </div>
+    
+    
+    
+    </div>
+    
+
+
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <script>
+
+  </script>
+
+  <script>
+
+  </script>
+
+  <!-- Slider için gerekli JavaScript -->
+  <script>
+
+  </script>
+
+</body>
+</html>
