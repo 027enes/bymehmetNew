@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 text.classList.add('opacity-0', 'translate-y-10');
               });
             });
-  
+
             // Aktif slide'ın animasyonunu başlat
             setTimeout(() => {
               const activeSlide = this.slides[this.activeIndex];

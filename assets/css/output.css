@@ -868,6 +868,10 @@ video {
   --tw-gradient-to: #fff var(--tw-gradient-to-position);
 }
 
+.to-transparent {
+  --tw-gradient-to: transparent var(--tw-gradient-to-position);
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1260,9 +1264,17 @@ video {
   font-weight: 600;
 }
 
+#etkinliklerimiz .swiper-pagination{
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   #anasayfa .swiper-pagination{
     padding-right: 50px !important;
+  }
+
+  #etkinliklerimiz .swiper-pagination{
+    display: block !important;
   }
 }
 
@@ -1324,9 +1336,19 @@ video {
   left: 0px;
 }
 
+.after\:top-0::after {
+  content: var(--tw-content);
+  top: 0px;
+}
+
 .after\:h-\[2px\]::after {
   content: var(--tw-content);
   height: 2px;
+}
+
+.after\:h-full::after {
+  content: var(--tw-content);
+  height: 100%;
 }
 
 .after\:w-0::after {
@@ -1334,10 +1356,39 @@ video {
   width: 0px;
 }
 
+.after\:w-full::after {
+  content: var(--tw-content);
+  width: 100%;
+}
+
 .after\:bg-black::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.after\:bg-gradient-to-r::after {
+  content: var(--tw-content);
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.after\:from-black::after {
+  content: var(--tw-content);
+  --tw-gradient-from: #000 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.after\:from-blue-500::after {
+  content: var(--tw-content);
+  --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.after\:to-transparent::after {
+  content: var(--tw-content);
+  --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 
 .after\:transition-all::after {

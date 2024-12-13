@@ -161,9 +161,15 @@
     font-weight: 600;
   }
 
+  #etkinliklerimiz .swiper-pagination{
+    display: none !important;
+  }
 @media (max-width: 768px) {
   #anasayfa .swiper-pagination{
     padding-right: 50px !important;
+  }
+  #etkinliklerimiz .swiper-pagination{
+    display: block !important;
   }
 }
 
