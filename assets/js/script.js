@@ -12,6 +12,15 @@ document.addEventListener('DOMContentLoaded', function() {
           clickable: true,
         },
         on: {
+          init: function() {
+            // İlk yüklemede animasyonu hemen başlat
+            const activeSlide = this.slides[this.activeIndex];
+            const texts = activeSlide.querySelectorAll('h4, h1');
+            texts.forEach(text => {
+              text.classList.remove('opacity-0', 'translate-y-10');
+              text.classList.add('opacity-100', 'translate-y-0');
+            });
+          },
           realIndexChange: function () {
             // Önce tüm slide'lardaki animasyonları sıfırla
             this.slides.forEach(slide => {
@@ -35,16 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
   
-      // İlk yüklemede animasyonu tetikle
-      setTimeout(() => {
-        const activeSlide = swiper.slides[swiper.activeIndex];
-        const texts = activeSlide.querySelectorAll('h4, h1');
-        texts.forEach(text => {
-          text.classList.remove('opacity-0', 'translate-y-10');
-          text.classList.add('opacity-100', 'translate-y-0');
-        });
-      }, 100);
-
       gsap.registerPlugin(ScrollTrigger);
 
       gsap.fromTo(".scroll-image-1", 
