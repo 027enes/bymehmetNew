@@ -1163,7 +1163,7 @@ video {
 
 #anasayfa .swiper-pagination{
   text-align: end !important;
-  padding-right: 100px !important;
+  padding-right: 100px ;
 }
 
 #anasayfa .swiper-pagination-bullet{
@@ -1267,6 +1267,12 @@ video {
 
 .nav-link.active {
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  #anasayfa .swiper-pagination{
+    padding-right: 50px !important;
+  }
 }
 
 .after\:absolute::after {
@@ -1485,4 +1491,3 @@ video {
     padding-right: 0px;
   }
 }
-
