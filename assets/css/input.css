@@ -161,3 +161,8 @@
     font-weight: 600;
   }
 
+@media (max-width: 768px) {
+  #anasayfa .swiper-pagination{
+    padding-right: 50px !important;
+  }
+}
