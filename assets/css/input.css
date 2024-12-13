@@ -65,7 +65,7 @@
 
   #anasayfa .swiper-pagination{
     text-align: end !important;
-    padding-right: 100px !important;
+    padding-right: 100px ;
   }
   #anasayfa .swiper-pagination-bullet{
     background-color: transparent !important;
