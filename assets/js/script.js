@@ -10,6 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+          dynamicBullets: true,
+          dynamicMainBullets: 1,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '"></span>';
+          },
         },
         on: {
           init: function() {
@@ -83,6 +88,11 @@ document.addEventListener('DOMContentLoaded', function() {
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+          dynamicBullets: true,
+          dynamicMainBullets: 1,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '"></span>';
+          },
         },
         breakpoints: {
           640: {

@@ -739,10 +739,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.resize {
-  resize: both;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -905,11 +901,6 @@ video {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 .px-4 {
@@ -1275,6 +1266,49 @@ video {
   }
 }
 
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #000;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+/* Aktif bullet */
+
+.swiper-pagination-bullet-active {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+
+/* Aktif bullet'ın hemen yanındakiler */
+
+.swiper-pagination-bullet-active-prev,
+.swiper-pagination-bullet-active-next {
+  width: 16px;
+  height: 16px;
+  opacity: 0.8;
+}
+
+/* İkinci dereceden komşular */
+
+.swiper-pagination-bullet-active-prev-prev,
+.swiper-pagination-bullet-active-next-next {
+  width: 12px;
+  height: 12px;
+  opacity: 0.6;
+}
+
+/* Üçüncü dereceden komşular */
+
+.swiper-pagination-bullet-active-prev-prev-prev,
+.swiper-pagination-bullet-active-next-next-next {
+  width: 8px;
+  height: 8px;
+  opacity: 0.4;
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
@@ -1437,10 +1471,6 @@ video {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  .md\:text-center {
-    text-align: center;
   }
 
   .md\:text-start {
